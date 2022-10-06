@@ -9,38 +9,33 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         home: Scaffold(
           backgroundColor: Colors.teal,
-          // left side red box and right side blue box middel 2 100by100 green and yellow box
-          body: SafeArea(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: 100,
-                  height: double.infinity,
-                  color: Colors.red,
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.yellow,
-                    ),
-                    Container(
-                      width: 100,
-                      height: 100,
-                      color: Colors.green,
-                    ),
-                  ],
-                ),
-                Container(
-                  width: 100,
-                  height: double.infinity,
-                  color: Colors.blue,
-                ),
-              ],
-            ),
+          body: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                width: 100,
+                color: Colors.red,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+              Container(
+                width: 100,
+                color: Colors.blue,
+              ),
+            ],
           ),
         ),
       );
